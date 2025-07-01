@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered WAF</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>⚡ Secure Your Web in Real Time ⚡</h1>
+
+    <form method="POST">
+        <input type="text" name="query" placeholder="Enter a request..." required>
+        <button type="submit">Scan</button>
+    </form>
+
+    {% if result %}
+    <h3>Result: <span class="{% if result == 'malicious' %}malicious{% else %}safe{% endif %}">
+        {{ result | upper }}
+    </span></h3>
+    {% endif %}
+
+    <div class="container">
+        <div id="chart-container">
+            <canvas id="scanChart"></canvas>
+        </div>
+
+        <div class="scanned-section">
+            <h2>Scanned Requests</h2>
+            <ul id="scanList"></ul>
+        </div>
+    </div>
+
+    <script>
+        async function fetchStats() {
+            const response = await fetch('/stats');
+            const data = await response.json();
+
+            updateChart(data.safe, data.malicious);
+            updateScannedList(data.scanned_urls);
+        }
+
+        function updateChart(safe, malicious) {
+            const ctx = document.getElementById('scanChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Safe Requests', 'Malicious Requests'],
+                    datasets: [{
+                        data: [safe, malicious],
+                        backgroundColor: ['#00cc66', '#ff3333'],
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: 'white'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateScannedList(scannedURLs) {
+            const scanList = document.getElementById("scanList");
+            scanList.innerHTML = "";
+
+            scannedURLs.forEach(entry => {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<strong>${entry.query}</strong> → 
+                    <span class="${entry.result === 'malicious' ? 'malicious' : 'safe'}">
+                        ${entry.result.toUpperCase()}
+                    </span>`;
+                scanList.appendChild(listItem);
+            });
+        }
+
+        fetchStats();
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI-Powered WAF</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="dark-theme">
+
+    <div class="main-container">
+        <h1 class="title">⚡Secure Your Browser⚡</h1>
+
+        <form method="POST" class="search-form">
+            <input type="text" name="query" placeholder="Enter a URL or request..." required>
+            <div class="buttons">
+                <button type="submit">Search</button>
+                <a href="{{ url_for('dashboard') }}" class="dashboard-btn">Go to Dashboard</a>
+            </div>
+        </form>
+
+        {% if result %}
+            <h3 class="result-label">
+                Result:
+                <span class="{% if result == 'malicious' %}malicious{% else %}safe{% endif %}">
+                    {{ result.upper() }}
+                </span>
+            </h3>
+        {% endif %}
+
+        {% if message %}
+            <p class="warning-message">{{ message }}</p>
+        {% endif %}
+    </div>
+
+</body>
+</html>

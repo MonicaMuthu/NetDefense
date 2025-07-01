@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Result</title>
+</head>
+<body>
+    <h1>Scan Result</h1>
+    <p><strong>Input Query:</strong> {{ query }}</p>
+    <p><strong>Prediction:</strong> <span style="color: {{ 'red' if prediction == 'malicious' else 'green' }};">{{ prediction }}</span></p>
+    <a href="/">Go Back</a>
+</body>
+</html>

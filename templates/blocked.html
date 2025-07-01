@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Access Blocked</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="dark-theme">
+    <div class="container blocked">
+        <h1>🚫 Access Denied 🚫</h1>
+        <p>This input has been classified as <strong>Malicious</strong>.</p>
+        <p>Your IP has been blacklisted due to multiple malicious attempts.</p>
+
+        <div class="nav-btns">
+            <a href="/" class="nav-btn">Back to Scanner</a>
+            <a href="/dashboard" class="nav-btn">Go to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>

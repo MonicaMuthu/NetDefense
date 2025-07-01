@@ -1,0 +1,279 @@
+/* body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    padding: 12px 20px;
+    width: 300px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background-color: #1e1e1e;
+    color: white;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #00cc66;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #00cc66;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00994d;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+#chart-container {
+    width: 350px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #333;
+}
+
+.scanned-section {
+    width: 400px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #333;
+}
+
+ul {
+    text-align: left;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 12px;
+    background-color: #2a2a2a;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.safe {
+    color: #00cc66;
+    font-weight: bold;
+}
+
+.malicious {
+    color: #ff3333;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 20px;
+} */
+
+/* Reset and base styles */
+/* Reset and base styles */
+
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-container {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 127, 0.2);
+    width: 500px;
+}
+
+.title {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #00ffcc;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.search-form .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-form button,
+.dashboard-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search-form button {
+    background-color: #00cc66;
+    color: white;
+}
+
+.dashboard-btn {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+}
+
+.search-form button:hover {
+    background-color: #00b359;
+}
+
+.dashboard-btn:hover {
+    background-color: #777;
+}
+
+.result-label {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.safe {
+    color: #00ff66;
+    font-weight: bold;
+}
+
+.malicious {
+    color: #ff4444;
+    font-weight: bold;
+}
+
+.warning-message {
+    margin-top: 10px;
+    color: #ffcc00;
+    font-style: italic;
+}
+
+
+  body {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 30px 0;
+    color: #ff9933;
+    font-weight: bold;
+}
+
+.dashboard-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+#chart-container {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px #00ffcc;
+    animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 10px #00ffcc;
+    }
+    100% {
+        box-shadow: 0 0 20px #00ffcc;
+    }
+}
+
+.scanned-section {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px #ff3399;
+    width: 300px;
+}
+
+.scanned-section h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#scanList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#scanList li {
+    background-color: #262626;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.safe {
+    color: #00ff66;
+}
+
+.malicious {
+    color: #ff3333;
+} 
+ 

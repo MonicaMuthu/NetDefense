@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WAF Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-heading">
+        ⚡ Secure your Web in Real Time ⚡
+    </div>
+
+    <div class="dashboard-container">
+        <div id="chart-container">
+            <canvas id="scanChart"></canvas>
+        </div>
+
+        <div class="scanned-section">
+            <h2>Scan History</h2>
+            <ul id="scanList"></ul>
+        </div>
+    </div>
+
+    <script>
+        async function fetchStats() {
+            const response = await fetch('/stats');
+            const data = await response.json();
+
+            updateChart(data.safe, data.malicious);
+            updateScannedList(data.scanned_urls);
+        }
+
+        function updateChart(safe, malicious) {
+            const ctx = document.getElementById('scanChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['✅ Safe', '❌ Malicious'],
+                    datasets: [{
+                        data: [safe, malicious],
+                        backgroundColor: ['#00cc66', '#ff3333'],
+                        borderWidth: 1,
+                        cutout: '70%'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: {
+                                color: 'white',
+                                font: { size: 14 }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateScannedList(scannedURLs) {
+            const scanList = document.getElementById("scanList");
+            scanList.innerHTML = "";
+            scannedURLs.forEach(entry => {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<strong>${entry.query}</strong> → 
+                    <span class="${entry.result === 'malicious' ? 'malicious' : 'safe'}">
+                        ${entry.result.toUpperCase()}
+                    </span>`;
+                scanList.appendChild(listItem);
+            });
+        }
+
+        fetchStats();
+    </script>
+</body>
+</html> 
+
+

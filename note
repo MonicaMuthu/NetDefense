@@ -1,0 +1,11 @@
+request,label
+"<script>alert('XSS')</script>",malicious
+"' OR '1'='1' --",malicious
+"<img src=x onerror=alert(1)>",malicious
+"SELECT * FROM users WHERE username='admin' --",malicious
+"<iframe src='http://evil.com'></iframe>",malicious
+"../etc/passwd",malicious
+"normal_user_input",safe
+"index.html",safe
+"Hello World",safe
+"username=monica&password=secure123",safe
